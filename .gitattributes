@@ -1,7 +1,7 @@
 * linguist-vendored
-*.cpp linguist-vendored=false
-*.h linguist-vendored=false
-*.c linguist-vendored=false
-*.swift linguist-vendored=false
-*.html linguist-vendored=false
-*.dart linguist-vendored=true
+*.cpp linguist-vendored=true
+*.h linguist-vendored=true
+*.c linguist-vendored=true
+*.swift linguist-vendored=true
+*.html linguist-vendored=true
+*.dart linguist-vendored=false
