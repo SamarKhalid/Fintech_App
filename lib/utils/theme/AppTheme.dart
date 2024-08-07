@@ -17,12 +17,12 @@ class AppTheme {
             color: AppColor.blackColor
         ),
         titleMedium: TextStyle(
-            fontSize: 18,
+            fontSize: 20,
             fontWeight: FontWeight.w400,
             color: AppColor.fontLight
         ),
         titleSmall: TextStyle(
-            fontSize: 16,
+            fontSize: 12,
             fontWeight: FontWeight.w400,
             color: AppColor.fontLight
         )

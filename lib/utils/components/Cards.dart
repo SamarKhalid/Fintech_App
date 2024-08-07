@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../theme/AppColor.dart';
 
 //This file contains different designs for CardViews used in the Application
@@ -133,15 +132,14 @@ class TransactionCard extends StatelessWidget {
   final Color iconBackgroundColor;
 
   const TransactionCard(
-      {Key? key,
+      {super.key,
       required this.transactionName,
       required this.description,
       required this.payment,
       required this.paymentColor,
       required this.iconPath,
       required this.iconColor,
-      required this.iconBackgroundColor})
-      : super(key: key);
+      required this.iconBackgroundColor});
 
   @override
   Widget build(BuildContext context) {
@@ -181,10 +179,13 @@ class TransactionCard extends StatelessWidget {
                       ?.copyWith(color: AppColor.blackColor),
                 ),
                 Text(description,
-                    style: Theme.of(context).textTheme.titleSmall?.copyWith(fontSize: 12)),
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleSmall
+                        ?.copyWith(fontSize: 12)),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               payment,
               style: Theme.of(context)
@@ -194,6 +195,69 @@ class TransactionCard extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class HomeMainCard extends StatelessWidget {
+  const HomeMainCard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    final double screenHeight = MediaQuery.of(context).size.height;
+    return Container(
+      width: screenWidth,
+      height: screenHeight * 0.25,
+      decoration: BoxDecoration(
+        color: Colors.black87,
+        borderRadius: BorderRadius.circular(8.0),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 18.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Total Balance", style:  Theme.of(context)
+                        .textTheme
+                        .titleSmall?.copyWith(color: Colors.white)),
+                    SizedBox(height: screenHeight*0.01),
+                    Text("\$ 250,000.40", style:  Theme.of(context)
+                        .textTheme
+                        .titleLarge?.copyWith(color: Colors.white,fontSize: 32)),
+                  ],
+                ),
+              ),
+              Image.asset(
+                'assets/images/card_shapes.png',
+                width: screenWidth*0.26,
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Image.asset(
+                'assets/images/green_circle.png',
+                height: screenHeight*0.1,
+              ),
+              Spacer(),
+              Text("My Wallet", style: Theme.of(context)
+                  .textTheme
+                  .titleSmall?.copyWith(color: Colors.white,fontSize: 18)),
+              Padding(
+                padding: const EdgeInsets.only(right: 25.0,bottom: 12.0,left: 8.0),
+                child: Icon(Icons.arrow_circle_right_rounded,color: Colors.white, size: 40),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

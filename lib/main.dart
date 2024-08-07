@@ -1,3 +1,4 @@
+import 'package:fintech/ui/HomePage.dart';
 import 'package:fintech/ui/WalletPage.dart';
 import 'package:fintech/utils/theme/AppTheme.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +19,12 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: AppTheme.mainTheme,
-          home: WalletPage(),
+          home: HomePage(),
+          routes: {
+            WalletPage.routeName: (context) => WalletPage(),
+          },
         );
       },
     );

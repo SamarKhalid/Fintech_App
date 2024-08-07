@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="615.695" height="654" viewBox="0 0 615.695 654">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_642" data-name="Rectangle 642" width="615.695" height="654" transform="translate(-16916.695 5232)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Yellow__shape_banner_left" x="-227.5" y="234.5" width="456" height="456" filterUnits="userSpaceOnUse">
+      <feOffset dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="22.5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(16916.695 -5232)" clip-path="url(#clip-path)">
+    <path id="Blue__shape_banner_left" data-name="Blue_ shape_banner_left" d="M-20844,5669.789s29.182-108.921,160.771-171.257,187.23-34.606,365.586-78.086,149.254-202.97,149.254-202.97H-20844Z" transform="translate(3865.627 14.524)" fill="#3e85ee"/>
+    <g transform="matrix(1, 0, 0, 1, -16916.7, 5232)" filter="url(#Yellow__shape_banner_left)">
+      <circle id="Yellow__shape_banner_left-2" data-name="Yellow_ shape_banner_left" cx="160.5" cy="160.5" r="160.5" transform="translate(-160 272)" fill="#ffca2a"/>
+    </g>
+  </g>
+</svg>
