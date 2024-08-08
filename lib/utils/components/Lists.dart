@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/AppColor.dart';
 class Lists {
-  static  List<Color> creditCardColors = [
+  static List<Color> creditCardColors = [
     Colors.white,
     AppColor.cardYellow,
     AppColor.cardBlue,
@@ -50,4 +50,30 @@ class Lists {
     'assets/icons/shoppingbag_icon.png',
     'assets/icons/creditcard_icon.png',
   ];
+
+  static List<Color> earningCardColors =[
+    AppColor.cardYellow,
+    AppColor.cardBlue,
+    AppColor.cardPink,
+    AppColor.cardRed,
+  ];
+  static List<String> earningInitialChar =[
+    "U",
+    "F",
+    "W",
+    "L"
+  ];
+  static List<String> earningTitles =[
+    "Upwork",
+    "Freepik",
+    "Enwork",
+    "LinkedIn"
+  ];
+  static List<String> earnings =[
+    "\$ 10,000",
+    "\$ 50,000",
+    "\$ 1000",
+    "\$ 500"
+  ];
+
 }
