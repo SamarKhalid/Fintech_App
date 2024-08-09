@@ -1,16 +1,22 @@
 # fintech
+Fintech Flutter App Prototype
 
-A new Flutter project.
+These Flutter frontend screens are an internship task for a fintech app prototype. The app is the first step to creating an intuitive and seamless user experience, focusing on core functionalities such as the home page, wallet page, and user profile page.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Screenshots 
+- Home Page:
 
-A few resources to get you started if this is your first Flutter project:
+![Screenshot_1723247236](https://github.com/user-attachments/assets/dd3d4533-bd5e-4e37-ad52-5546c3845648)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot_1723247284](https://github.com/user-attachments/assets/bdd3b8e9-3a5b-494d-9c13-4d24aefafcdf)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+- Wallet Page: 
+
+![Screenshot_1723247303](https://github.com/user-attachments/assets/afdb1b42-9c03-43d4-8757-6a3d289301ae)
+
+
+- Profile Page:
+
+![Screenshot_1723247320](https://github.com/user-attachments/assets/36845a42-f7cb-43aa-8f7d-e889507e9792)
