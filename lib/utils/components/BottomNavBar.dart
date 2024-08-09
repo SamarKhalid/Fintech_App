@@ -5,6 +5,8 @@ import '../../ui/WalletPage.dart';
 import '../theme/AppColor.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
+  const BottomNavigationBarWidget({super.key});
+
   @override
   _BottomNavigationBarWidgetState createState() => _BottomNavigationBarWidgetState();
 }
@@ -13,10 +15,10 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
   int _selectedIndex = 0;
 
   final List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
-    WalletPage(),
-    HomePage(), // Placeholder or another page
-    ProfilePage(),
+    const HomePage(),
+    const WalletPage(),
+    const HomePage(),
+    const ProfilePage(),
   ];
 
   void _onItemTapped(int index) {
@@ -33,7 +35,7 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
         children: _widgetOptions,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined, size: 30),
             activeIcon: Icon(Icons.home, size: 30),

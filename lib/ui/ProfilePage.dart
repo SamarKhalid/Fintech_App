@@ -1,12 +1,9 @@
-import 'package:fintech/ui/HomePage.dart';
 import 'package:fintech/utils/components/Cards.dart';
 import 'package:flutter/material.dart';
-
-import '../utils/components/BottomNavBar.dart';
 import '../utils/theme/AppColor.dart';
 
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({Key? key}) : super(key: key);
+  const ProfilePage({super.key});
   static String routeName = 'Profile page';
 
   @override
@@ -46,15 +43,15 @@ class _ProfilePageState extends State<ProfilePage> {
                     ],
                   ),
                   SizedBox(height: screenHeight*0.05),
-                  SettingsButtons(buttonIcon: Icons.person, buttonText: "Profile Settings"),
+                  const SettingsButtons(buttonIcon: Icons.person, buttonText: "Profile Settings"),
                   SizedBox(height: screenHeight*0.03),
-                  SettingsButtons(buttonIcon: Icons.receipt_long, buttonText: "Transactions"),
+                  const SettingsButtons(buttonIcon: Icons.receipt_long, buttonText: "Transactions"),
                   SizedBox(height: screenHeight*0.03),
-                  SettingsButtons(buttonIcon: Icons.credit_card, buttonText: "My Cards"),
+                  const SettingsButtons(buttonIcon: Icons.credit_card, buttonText: "My Cards"),
                   SizedBox(height: screenHeight*0.03),
-                  SettingsButtons(buttonIcon: Icons.attach_money_rounded, buttonText: "My Earnings"),
+                  const SettingsButtons(buttonIcon: Icons.attach_money_rounded, buttonText: "My Earnings"),
                   SizedBox(height: screenHeight*0.03),
-                  SettingsButtons(buttonIcon: Icons.logout_rounded, buttonText: "Log out"),
+                  const SettingsButtons(buttonIcon: Icons.logout_rounded, buttonText: "Log out"),
                 ],
               ),
             ),

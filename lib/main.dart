@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.mainTheme,
-      home:  BottomNavigationBarWidget(),
+      home:  const BottomNavigationBarWidget(),
       routes: {
-        WalletPage.routeName: (context) => WalletPage(),
-        HomePage.routeName: (context) => HomePage(),
-        ProfilePage.routeName: (context) => ProfilePage(),
+        WalletPage.routeName: (context) => const WalletPage(),
+        HomePage.routeName: (context) => const HomePage(),
+        ProfilePage.routeName: (context) => const ProfilePage(),
       },
     );
   }

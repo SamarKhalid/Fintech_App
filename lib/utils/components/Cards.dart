@@ -33,7 +33,7 @@ class CreditCard extends StatelessWidget {
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       Text(
-                        "\$24,500,55",
+                        ("\$ 250,000.40"),
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
                     ],
@@ -48,23 +48,11 @@ class CreditCard extends StatelessWidget {
             ),
             SizedBox(height: screenHeight * 0.03),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-              Column(children: [
-                Text(" 1234 ", style: Theme.of(context).textTheme.titleMedium)
-              ]),
-              Column(
-                children: [
-                  Text(" **** ", style: Theme.of(context).textTheme.titleMedium)
-                ],
-              ),
-              Column(children: [
-                Text(" **** ", style: Theme.of(context).textTheme.titleMedium)
-              ]),
-              Column(
-                children: [
-                  Text(" 5678 ",
-                      style: Theme.of(context).textTheme.titleMedium),
-                ],
-              ),
+              Text(" 1234 ", style: Theme.of(context).textTheme.titleMedium),
+              Text(" **** ", style: Theme.of(context).textTheme.titleMedium),
+              Text(" **** ", style: Theme.of(context).textTheme.titleMedium),
+              Text(" 5678 ",
+                  style: Theme.of(context).textTheme.titleMedium),
             ]),
             SizedBox(height: screenHeight * 0.029),
             Container(
@@ -373,7 +361,7 @@ class EarningsCard extends StatelessWidget {
             Container(
               width: screenWidth * 0.1,
               height: screenHeight * 0.08,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   shape: BoxShape.circle, color:AppColor.backgroundColor),
               child: Center(
                 child: Text(initialCharacter,
@@ -383,7 +371,7 @@ class EarningsCard extends StatelessWidget {
                         ?.copyWith(color: Colors.black,fontWeight: FontWeight.bold)),
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Text(EarningTitle,
                 style: Theme.of(context)
                     .textTheme
@@ -421,7 +409,7 @@ class SettingsButtons extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 5,
             blurRadius: 7,
-            offset: Offset(0, 3), // changes position of shadow
+            offset: const Offset(0, 3), // changes position of shadow
           ),
         ],
       ),
@@ -434,8 +422,8 @@ class SettingsButtons extends StatelessWidget {
             Text(buttonText,style: Theme.of(context)
                 .textTheme
                 .titleMedium?.copyWith(fontWeight: FontWeight.bold,color: AppColor.blackColor)),
-            Spacer(),
-            Icon(Icons.arrow_forward_ios_rounded,color: AppColor.blackColor),
+            const Spacer(),
+            const Icon(Icons.arrow_forward_ios_rounded,color: AppColor.blackColor),
           ],
         ),
       ),

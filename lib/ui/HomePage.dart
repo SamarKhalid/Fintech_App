@@ -1,8 +1,6 @@
 import 'package:fintech/utils/components/Cards.dart';
 import 'package:fintech/utils/theme/AppColor.dart';
 import 'package:flutter/material.dart';
-
-import '../utils/components/BottomNavBar.dart';
 import '../utils/components/Lists.dart';
 
 class HomePage extends StatefulWidget {
@@ -52,7 +50,6 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               SizedBox(height: screenHeight * 0.03),
-              // Use Expanded to handle overflow and allow for flexible content
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(

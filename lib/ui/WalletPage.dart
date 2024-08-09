@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import '../utils/components/Cards.dart';
 import '../utils/components/Lists.dart';
 import '../utils/theme/AppColor.dart';
-import '../utils/components/BottomNavBar.dart'; // Import your BottomNavigationBarWidget
 
 class WalletPage extends StatelessWidget {
-  const WalletPage({Key? key}) : super(key: key);
+  const WalletPage({super.key});
 
   static String routeName = 'wallet page';
 
@@ -44,23 +43,35 @@ class WalletPage extends StatelessWidget {
                 ),
                 SizedBox(height: screenHeight * 0.03),
                 // Cards list
-                SizedBox(
-                  width: screenWidth,
-                  height: screenHeight * 0.31,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: Lists.creditCardColors.length,
-                    itemBuilder: (context, index) {
-                      return Container(
-                        // Space between cards
-                        margin: const EdgeInsets.symmetric(horizontal: 6.0),
-                        child: CreditCard(
-                          backgroundColor: Lists.creditCardColors[index],
-                        ),
-                      );
-                    },
-                  ),
+                Row(
+                  children: [
+                    IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.add_circle_rounded,
+                          size: 35,
+                          color: AppColor.blackColor,
+                        )),
+                    SizedBox(
+                      width: screenWidth*0.8,
+                      height: screenHeight * 0.31,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: Lists.creditCardColors.length,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            // Space between cards
+                            margin: const EdgeInsets.symmetric(horizontal: 6.0),
+                            child: CreditCard(
+                              backgroundColor: Lists.creditCardColors[index],
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
                 ),
+
                 SizedBox(height: screenHeight * 0.035),
                 // Transactions
                 Row(
@@ -86,7 +97,8 @@ class WalletPage extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return Container(
                         // Space between cards
-                        margin: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 6.0),
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 6.0, vertical: 6.0),
                         child: TransactionCard(
                           transactionName: Lists.transactionNames[index],
                           description: Lists.transactionDescriptions[index],
@@ -94,7 +106,8 @@ class WalletPage extends StatelessWidget {
                           paymentColor: Lists.transactionsPaymentsColors[index],
                           iconPath: Lists.transactionsIconPaths[index],
                           iconColor: Lists.transactionIconColors[index],
-                          iconBackgroundColor: Lists.transactionIconBackgrounds[index],
+                          iconBackgroundColor:
+                              Lists.transactionIconBackgrounds[index],
                         ),
                       );
                     },
