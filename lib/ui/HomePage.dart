@@ -2,6 +2,7 @@ import 'package:fintech/utils/components/Cards.dart';
 import 'package:fintech/utils/theme/AppColor.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/components/BottomNavBar.dart';
 import '../utils/components/Lists.dart';
 
 class HomePage extends StatefulWidget {

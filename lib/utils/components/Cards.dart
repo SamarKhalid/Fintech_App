@@ -14,8 +14,7 @@ class CreditCard extends StatelessWidget {
     final double screenWidth = MediaQuery.of(context).size.width;
     final double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-        width: MediaQuery.of(context).size.width * 0.8,
-        height: MediaQuery.of(context).size.height * 0.2,
+        width: screenWidth * 0.8,
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: BorderRadius.circular(8.0),
@@ -67,7 +66,7 @@ class CreditCard extends StatelessWidget {
                 ],
               ),
             ]),
-            SizedBox(height: screenHeight * 0.023),
+            SizedBox(height: screenHeight * 0.029),
             Container(
               decoration: const BoxDecoration(
                 color: AppColor.blackColor,
