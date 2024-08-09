@@ -1,4 +1,5 @@
 import 'package:fintech/ui/HomePage.dart';
+import 'package:fintech/ui/ProfilePage.dart';
 import 'package:fintech/ui/WalletPage.dart';
 import 'package:fintech/utils/theme/AppTheme.dart';
 import 'package:flutter/material.dart';
@@ -13,19 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: const Size(360, 800),
-      minTextAdapt: true,
-      splitScreenMode: true,
-      builder: (context, child) {
-        return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          theme: AppTheme.mainTheme,
-          home: HomePage(),
-          routes: {
-            WalletPage.routeName: (context) => WalletPage(),
-          },
-        );
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.mainTheme,
+      home: ProfilePage(),
+      routes: {
+        WalletPage.routeName: (context) => WalletPage(),
+        HomePage.routeName: (context) => HomePage(),
+        ProfilePage.routeName: (context) => ProfilePage(),
       },
     );
   }

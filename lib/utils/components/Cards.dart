@@ -401,3 +401,46 @@ class EarningsCard extends StatelessWidget {
     );
   }
 }
+
+class SettingsButtons extends StatelessWidget {
+  final IconData buttonIcon;
+  final String buttonText;
+  const SettingsButtons({Key? key, required this.buttonIcon, required this.buttonText}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    final double screenHeight = MediaQuery.of(context).size.height;
+    return  Container(
+      width: screenWidth,
+      height: screenHeight*0.08,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12.0),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          children: [
+            Icon(buttonIcon,color: AppColor.blackColor),
+            SizedBox(width: screenWidth*0.03,),
+            Text(buttonText,style: Theme.of(context)
+                .textTheme
+                .titleMedium?.copyWith(fontWeight: FontWeight.bold,color: AppColor.blackColor)),
+            Spacer(),
+            Icon(Icons.arrow_forward_ios_rounded,color: AppColor.blackColor),
+          ],
+        ),
+      ),
+    );
+  }
+}
+ 
