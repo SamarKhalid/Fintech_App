@@ -1,7 +1,7 @@
 # fintech
-Fintech Flutter App Prototype
+**Fintech Flutter App Prototype**
 
-These Flutter frontend screens are an internship task for a fintech app prototype. The app is the first step to creating an intuitive and seamless user experience, focusing on core functionalities such as the home page, wallet page, and user profile page.
+This Flutter application is a prototype developed as part of an internship task for a fintech app. It represents the initial phase in creating an intuitive and seamless user experience, focusing on core functionalities including the home page, wallet page, and user profile page.
 
 
 # Screenshots 
